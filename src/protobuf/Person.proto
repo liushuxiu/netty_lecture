@@ -2,6 +2,7 @@ syntax = "proto2";
 
 package com.shengsiyuan.protobuf;
 
+
 option optimize_for = SPEED;
 option java_package = "com.ly.six";
 option java_outer_classname = "MyDataInfo";
@@ -39,3 +40,4 @@ message Cat {
     optional string name = 1;
     optional string city = 2;
 }
+
