@@ -3,15 +3,15 @@ package com.ly.six;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 
-public class TestServerHandler extends SimpleChannelInboundHandler<MyDataInfo.Person> {
+public class TestServerHandler extends SimpleChannelInboundHandler<MyDataInfo.MyMessage> {
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, MyDataInfo.Person msg) throws Exception {
+    protected void channelRead0(ChannelHandlerContext ctx, MyDataInfo.MyMessage msg) throws Exception {
 
         System.err.println("------------------------------");
-        System.out.println(msg.getName());
-        System.out.println(msg.getAge());
-        System.out.println(msg.getAddress());
+//        System.out.println(msg.getName());
+//        System.out.println(msg.getAge());
+//        System.out.println(msg.getAddress());
 
     }
 }
