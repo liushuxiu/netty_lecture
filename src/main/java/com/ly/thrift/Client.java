@@ -18,7 +18,7 @@ public class Client {
 
         try {
             transport.open();
-            Person person=client.getPersonByUsername("zhangsan");
+            Person person=client.getPersonByUsername("haha");
 
             System.out.println(person.getUsername());
             System.out.println(person.getAge());
