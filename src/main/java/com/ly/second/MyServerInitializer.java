@@ -1,4 +1,4 @@
-package com.ly.secondeaxmple;
+package com.ly.second;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

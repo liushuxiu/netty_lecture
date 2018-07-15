@@ -27,6 +27,7 @@ public class NettyServer {
             serverBootstrap.group(boss, worker).channel(NioServerSocketChannel.class).childHandler(new ServerInitializer());
             ChannelFuture channelFuture = serverBootstrap.bind(8080).sync();
             channelFuture.channel().closeFuture().sync();
+            System.out.println(8);
         } finally {
             boss.shutdownGracefully();
             worker.shutdownGracefully();

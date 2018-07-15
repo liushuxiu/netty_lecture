@@ -1,4 +1,4 @@
-package com.ly.secondeaxmple;
+package com.ly.second;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;

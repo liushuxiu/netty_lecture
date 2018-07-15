@@ -1,4 +1,4 @@
-package com.ly.secondeaxmple;
+package com.ly.second;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
@@ -40,13 +40,13 @@ public class NettyClient {
 
 
          ChannelFuture channelFuture=bootstrap.connect("localhost",8899).sync();
-//         Scanner in=new Scanner(System.in);
-//         while (in.hasNext())
-//         {
-//             String a=in.nextLine();
-//             channelFuture.channel().writeAndFlush(a);
-//
-//         }
+         Scanner in=new Scanner(System.in);
+         while (in.hasNext())
+         {
+             String a=in.nextLine();
+             channelFuture.channel().writeAndFlush(a);
+
+         }
         channelFuture.channel().closeFuture().sync();
      }finally {
          worker.shutdownGracefully();
